@@ -18,7 +18,7 @@ const createTable = (col, row) => {
 const drawPixel = ()=>{
     let boxes = document.querySelectorAll('.box-cell');
     boxes.forEach( box => {
-        box.style.border = '';
+        box.style.border = 'none';
     })
 }
 
@@ -48,12 +48,14 @@ document.querySelector('.table').addEventListener('click', (e)=>{
 })
 
 //Event for clearing the Table.
-document.querySelector('.delete').addEventListener('click', ()=>{
+document.querySelector('.delete').addEventListener('click', (e)=>{
+    e.preventDefault()
     deleteTable();
 })
 
 //Events to clear color ....
-document.querySelector('.clear').addEventListener('click', ()=>{
+document.querySelector('.clear').addEventListener('click', (e)=>{
+    e.preventDefault()
     let boxes = document.querySelectorAll('.box-cell');
     boxes.forEach(box => {
         box.style.backgroundColor = '#fff'
@@ -61,7 +63,8 @@ document.querySelector('.clear').addEventListener('click', ()=>{
 })
 
 //Events to Draw pixel ....
-document.querySelector('.draw').addEventListener('click', ()=>{
+document.querySelector('.draw').addEventListener('click', (e)=>{
+    e.preventDefault()
     drawPixel();
     
 })
