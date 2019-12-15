@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pixel Art Creator</title>
+</head>
+<body >
+    <div class="container">
+        <header>
+            <h1>Pixel <span> Art</span> Marker</h1>
+        </header>
+        <section class="section-a">
+            <form>
+                <div>
+                    <label for="height">Height</label>
+                    <input type="number"  id="height">
+                </div>
+                <div>
+                    <label for="height">Weight</label>
+                    <input type="number"  id="width">
+            </form>
+            <div class="btn">
+                <div class="create-board">
+                    <button class="create-table">Create Board</button>
+                    <input type="color" id="color">
+                </div>
+                <div class="board-settings">
+                    <button class="clear">Clear</button>
+                    <button class="delete">Delete</button>
+                    <button class="draw">Draw</button>
+                </div>
+            </div>
+        </section>
+        <section class="pixel-board">
+            <table class="table">   
+            </table>
+        </section>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

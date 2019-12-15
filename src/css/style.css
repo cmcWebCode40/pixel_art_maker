@@ -1,0 +1,97 @@
+:root {
+    --primary-color:rgb(156, 12, 12);
+    --white-color:#fff;
+    --hover-primary-color:rgb(207, 18, 18);
+    --black-color:#000;
+    --black-light:rgb(82, 73, 73);
+    --light-white:#f4f4f4;
+    --transparent-black:rgb(255, 249, 249);
+    --transparent-bg-color: rgba(0, 0, 0, .4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url('/src/img/alien-arcade-background-1670977.jpg') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container {
+    text-align: center;
+    /* background:var(--transparent-bg-color);
+    height: 100vh;
+    width: 100vw; */
+}
+
+header h1 {
+    text-shadow: 0 5px  6px var(--black-color);
+    color:var(--white-color);
+    margin: 0em 0 2em 0;
+    font-size: 36px;
+}
+
+.btn > div {
+    margin-top: 2em;
+}
+
+input[type='number'] {
+    padding: .4em 2em;
+    margin: 0 .5em;
+    background: var(--transparent-black);
+    border: none;
+}
+
+input:focus {
+    border: 2px solid var(--hover-primary-color);
+    outline: none;
+}
+
+label {
+    display: block;
+    color: var(--white-color);
+    font-size: 18px;
+    margin: .6em  7em .2em 0;
+}
+
+form  {
+}
+
+table {
+    text-align: center;
+    margin: 1rem auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid var(--black-color);
+}
+
+
+td {
+    border: 0.5px solid var(--black-light);
+    padding: .3em;
+    width: 5px;
+    height: 5px;
+    background: var(--white-color);
+} 
+
+button {
+    padding: 6px 18px;
+    margin: 10px ;
+    border: 4px var(--white-color) solid;
+    background:var(--primary-color) ;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background:var(--hover-primary-color) ;
+    color: var(--light-white);
+}
+
