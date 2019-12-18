@@ -5,7 +5,7 @@
     --black-color:#000;
     --black-light:rgb(82, 73, 73);
     --light-white:#f4f4f4;
-    --transparent-black:rgb(255, 249, 249);
+    --transparent-black:rgba(255, 255, 255, 0.89);
     --transparent-bg-color: rgba(0, 0, 0, .4);
 }
 
@@ -15,20 +15,16 @@
     box-sizing: border-box;
 }
 
-
+          
 body {
-    background: url('/src/img/alien-arcade-background-1670977.jpg') center no-repeat;
+    background: url('https://res.cloudinary.com/cmcwebcode/image/upload/v1576700759/alien-arcade-background-1670977_nb6nes.jpg') center no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
 }
 
-
 .container {
     text-align: center;
-    /* background:var(--transparent-bg-color);
-    height: 100vh;
-    width: 100vw; */
 }
 
 header h1 {
@@ -47,6 +43,7 @@ input[type='number'] {
     margin: 0 .5em;
     background: var(--transparent-black);
     border: none;
+    box-shadow: 0px 2px 2px rgb(206, 206, 206), 0px 2px 2px rgb(5, 3, 3), 0px 2px 4px rgb(0, 0, 0);
 }
 
 input:focus {

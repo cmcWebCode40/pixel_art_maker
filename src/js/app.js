@@ -26,7 +26,7 @@ const deleteTable = ()=>{
     table.innerHTML = ''
 }
 
-const clearFields = ()=> {
+const clearFields = ()=> {src
     document.querySelector('#height').value= '';
     document.querySelector('#width').value= '';
     
