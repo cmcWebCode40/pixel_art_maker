@@ -26,7 +26,7 @@ const deleteTable = ()=>{
     table.innerHTML = ''
 }
 
-const clearFields = ()=> {src
+const clearFields = ()=> {
     document.querySelector('#height').value= '';
     document.querySelector('#width').value= '';
     
@@ -68,3 +68,15 @@ document.querySelector('.draw').addEventListener('click', (e)=>{
     drawPixel();
     
 })
+
+
+// Service worker registration
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', ()=>{
+        navigator.serviceWorker.register('../sw.js').then(()=>{
+            console.log('service worker registered');
+        })
+    })
+}
+
