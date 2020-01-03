@@ -16,7 +16,7 @@ Enter the required fields...`height && width`
 
 ## Website
 
-* This web App is hosted on [netlify](https://netlify.com)
+* This web App is hosted on [surge](https://surge.sh)
 
 * This is my WebApp link [ makeyourpixeldraw]( makeyourpixeldraw.surge.sh)
 
