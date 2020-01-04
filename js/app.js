@@ -69,14 +69,6 @@ document.querySelector('.draw').addEventListener('click', (e) => {
 
 })
 
-// caches.open("app-shell").then(cache => {
-//     // cache.add('mike')
-//     cache.match("/manifest.json").then(response => {
-//         if (response) {
-
-//         }
-//     })
-// }
 
 // Service worker registration
 
