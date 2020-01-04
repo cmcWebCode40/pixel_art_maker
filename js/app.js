@@ -1,5 +1,5 @@
 // Global Variable....
-const table = document.querySelector('.table') ;
+const table = document.querySelector('.table');
 
 
 // functions for all Events...
@@ -7,7 +7,7 @@ const createTable = (col, row) => {
     for (let x = 0; x < col; x++) {
         let tr = document.createElement('tr')
         table.append(tr);
-        for (let  y = 0;  y<row; y++) {
+        for (let y = 0; y < row; y++) {
             let td = document.createElement('td')
             td.className = `box-cell`
             tr.append(td);
@@ -15,46 +15,46 @@ const createTable = (col, row) => {
     }
 }
 
-const drawPixel = ()=>{
+const drawPixel = () => {
     let boxes = document.querySelectorAll('.box-cell');
-    boxes.forEach( box => {
+    boxes.forEach(box => {
         box.style.border = 'none';
     })
 }
 
-const deleteTable = ()=>{
+const deleteTable = () => {
     table.innerHTML = ''
 }
 
-const clearFields = ()=> {
-    document.querySelector('#height').value= '';
-    document.querySelector('#width').value= '';
-    
+const clearFields = () => {
+    document.querySelector('#height').value = '';
+    document.querySelector('#width').value = '';
+
 }
 
 // Events for creating Table...
-document.querySelector('.create-table').addEventListener('click',(e) =>{
+document.querySelector('.create-table').addEventListener('click', (e) => {
     e.preventDefault();
     const column = document.querySelector('#height').value;
     const row = document.querySelector('#width').value;
-    createTable(column,row) 
+    createTable(column, row)
     clearFields();
 })
 
 // Event for coloring the table....
-document.querySelector('.table').addEventListener('click', (e)=>{
+document.querySelector('.table').addEventListener('click', (e) => {
     const color = document.querySelector('#color').value;
-    e.target = 'td' ? e.target.style.backgroundColor = color : `#fff` ;
+    e.target = 'td' ? e.target.style.backgroundColor = color : `#fff`;
 })
 
 //Event for clearing the Table.
-document.querySelector('.delete').addEventListener('click', (e)=>{
+document.querySelector('.delete').addEventListener('click', (e) => {
     e.preventDefault()
     deleteTable();
 })
 
 //Events to clear color ....
-document.querySelector('.clear').addEventListener('click', (e)=>{
+document.querySelector('.clear').addEventListener('click', (e) => {
     e.preventDefault()
     let boxes = document.querySelectorAll('.box-cell');
     boxes.forEach(box => {
@@ -63,20 +63,28 @@ document.querySelector('.clear').addEventListener('click', (e)=>{
 })
 
 //Events to Draw pixel ....
-document.querySelector('.draw').addEventListener('click', (e)=>{
+document.querySelector('.draw').addEventListener('click', (e) => {
     e.preventDefault()
     drawPixel();
-    
+
 })
 
+// caches.open("app-shell").then(cache => {
+//     // cache.add('mike')
+//     cache.match("/manifest.json").then(response => {
+//         if (response) {
+
+//         }
+//     })
+// }
 
 // Service worker registration
 
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', ()=>{
-        navigator.serviceWorker.register('../sw.js').then(()=>{
-            console.log('service worker registered');
-        })
-    })
+    navigator.serviceWorker.register("/sw.js")
+        .then(registration => {
+            console.log(registration);
+        }).catch(err => console.log(err))
+
 }
 
