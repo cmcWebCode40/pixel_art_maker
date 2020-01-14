@@ -1,93 +1,87 @@
 :root {
-    --primary-color:rgb(156, 12, 12);
-    --white-color:#fff;
-    --hover-primary-color:rgb(207, 18, 18);
-    --black-color:#000;
-    --black-light:rgb(82, 73, 73);
-    --light-white:#f4f4f4;
-    --transparent-black:rgba(255, 255, 255, 0.89);
-    --transparent-bg-color: rgba(0, 0, 0, .4);
+  --primary-color: rgb(156, 12, 12);
+  --white-color: #fff;
+  --hover-primary-color: rgb(207, 18, 18);
+  --black-color: #000;
+  --black-light: rgb(82, 73, 73);
+  --light-white: #f4f4f4;
+  --transparent-black: rgba(255, 255, 255, 0.89);
+  --transparent-bg-color: rgba(0, 0, 0, 0.4);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-          
 body {
-    background: url('bg.jpg') center no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    /* ('https://res.cloudinary.com/cmcwebcode/image/upload/v1576700759/alien-arcade-background-1670977_nb6nes.jpg') */
+  background: url("bg.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .container {
-    text-align: center;
+  text-align: center;
 }
 
 header h1 {
-    text-shadow: 0 5px  6px var(--black-color);
-    color:var(--white-color);
-    margin: 0em 0 2em 0;
-    font-size: 36px;
+  text-shadow: 0 5px 6px var(--black-color);
+  color: var(--white-color);
+  margin: 0em 0 2em 0;
+  font-size: 36px;
 }
 
 .btn > div {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
-input[type='number'] {
-    padding: .4em 2em;
-    margin: 0 .5em;
-    background: var(--transparent-black);
-    border: none;
-    box-shadow: 0px 2px 2px rgb(206, 206, 206), 0px 2px 2px rgb(5, 3, 3), 0px 2px 4px rgb(0, 0, 0);
+input[type="number"] {
+  padding: 0.4em 2em;
+  margin: 0 0.5em;
+  background: var(--transparent-black);
+  border: none;
+  box-shadow: 0px 2px 2px rgb(206, 206, 206), 0px 2px 2px rgb(5, 3, 3),
+    0px 2px 4px rgb(0, 0, 0);
 }
 
 input:focus {
-    border: 2px solid var(--hover-primary-color);
-    outline: none;
+  border: 2px solid var(--hover-primary-color);
+  outline: none;
 }
 
 label {
-    display: block;
-    color: var(--white-color);
-    font-size: 18px;
-    margin: .6em  7em .2em 0;
+  display: block;
+  color: var(--white-color);
+  font-size: 18px;
+  margin: 0.6em 7em 0.2em 0;
 }
-
 
 table {
-    text-align: center;
-    margin: 1rem auto;
-    border-spacing: 0;
-    border-collapse: collapse;
-    border: 1px solid var(--black-color);
+  text-align: center;
+  margin: 1rem auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid var(--black-color);
 }
 
-
 td {
-    border: 0.5px solid var(--black-light);
-    padding: .3em;
-    width: 5px;
-    height: 5px;
-    background: var(--white-color);
-} 
+  border: 0.5px solid var(--black-light);
+  padding: 0.3em;
+  width: 5px;
+  height: 5px;
+  background: var(--white-color);
+}
 
 button {
-    padding: 6px 18px;
-    margin: 10px ;
-    border: 4px var(--white-color) solid;
-    background:var(--primary-color) ;
-    color: var(--white-color);
-    cursor: pointer;
+  padding: 6px 18px;
+  margin: 10px;
+  border: 4px var(--white-color) solid;
+  background: var(--primary-color);
+  color: var(--white-color);
+  cursor: pointer;
 }
 
 button:hover {
-    background:var(--hover-primary-color) ;
-    color: var(--light-white);
+  background: var(--hover-primary-color);
+  color: var(--light-white);
 }
-
