@@ -68,6 +68,11 @@ document.querySelector(".draw").addEventListener("click", e => {
 
 //Zoom buttons
 
-const zoomInOut = function() {
-  const zoomIn = document.querySelector(".");
-};
+const zoomInOut = (function() {
+  const zoomIn = document.querySelector(".zoom-in");
+  const zoomOut = document.querySelector(".zoom-out");
+
+  zoomIn.addEventListener("click", () => {
+    let box = document.querySelectorAll(".box-cell");
+  });
+})();
