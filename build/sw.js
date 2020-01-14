@@ -14,9 +14,9 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 self.addEventListener('message', (event) => {
-     if (event.data && event.data.type === 'SKIP_WAITING') {
-          self.skipWaiting();
-     }
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 /**
@@ -25,25 +25,25 @@ self.addEventListener('message', (event) => {
  * See https://goo.gl/S9QRab
  */
 self.__precacheManifest = [
-     {
-          "url": "css/bg.jpg",
-          "revision": "9c340977fcafa71a415e2d5463251f9a"
-     },
-     {
-          "url": "css/style.css",
-          "revision": "8cef01e653ce53953d14df8a8d134d54"
-     },
-     {
-          "url": "img/favicon.png",
-          "revision": "a29f8c90ddcca4332139087f7d591468"
-     },
-     {
-          "url": "index.html",
-          "revision": "ca55583fa9cc551c18c0cab9cd441d0a"
-     },
-     {
-          "url": "js/app.js",
-          "revision": "585a00023335103349401d066a83f781"
-     }
+  {
+    "url": "css/bg.jpg",
+    "revision": "9c340977fcafa71a415e2d5463251f9a"
+  },
+  {
+    "url": "css/style.css",
+    "revision": "fc6ef4046811f1326277943738eefc93"
+  },
+  {
+    "url": "img/favicon.png",
+    "revision": "a29f8c90ddcca4332139087f7d591468"
+  },
+  {
+    "url": "index.html",
+    "revision": "f10930f7824a338bc11c04b69e961d81"
+  },
+  {
+    "url": "js/app.js",
+    "revision": "30d08aae06347ac9f45c7ff2e1806ac1"
+  }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
