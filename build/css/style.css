@@ -17,10 +17,11 @@
 
           
 body {
-    background: url('https://res.cloudinary.com/cmcwebcode/image/upload/v1576700759/alien-arcade-background-1670977_nb6nes.jpg') center no-repeat;
+    background: url('bg.jpg') center no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    /* ('https://res.cloudinary.com/cmcwebcode/image/upload/v1576700759/alien-arcade-background-1670977_nb6nes.jpg') */
 }
 
 .container {
@@ -58,8 +59,6 @@ label {
     margin: .6em  7em .2em 0;
 }
 
-form  {
-}
 
 table {
     text-align: center;
