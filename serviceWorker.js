@@ -1,6 +1,8 @@
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts(
+  "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
+);
 
-// custom Adjustments 
+// custom Adjustments
 console.log("changes");
 
 workbox.precaching.precachingAndRoute([]);
