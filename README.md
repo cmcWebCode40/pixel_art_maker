@@ -12,8 +12,7 @@ A project made for fun inorder to get more familiar with vanilla js
 
 Enter the required fields...`height && width`
 
-\*Pick a Color
-
+- Pick a Color
 - Make your Arts
 - And Draw .
 
