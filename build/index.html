@@ -8,90 +8,70 @@
      <meta name="description" content="pixel Art Maker">
      <link rel="stylesheet" href="./css/style.css">
      <title>Pixel Art Creator</title>
-     <!-- <link rel="shortcut icon" href="./images/icons/icon-72x72.png" type="image/x-icon">
-     <link rel="manifest" href="./manifest.json"> -->
+     <link rel="shortcut icon" href="./images/icons/icon-72x72.png" type="image/x-icon">
+     <link rel="manifest" href="./manifest.json"> 
 
-     <!-- open Graph -->
-     <!-- <meta property="og:type" content="website">
+
+
+     <!-- open Graph  -->
+     <meta property="og:type" content="website">
      <meta property="og:url" content="drawyourpixelart.netlify.com">
      <meta property="og:title" contnent="pixel art maker">
      <meta property="og:image" content="./images/icons/icon-72x72.png">
      <meta property="og:description" content="Simple weight converter">
-     <meta property="og:site_name" content="Weight Converter"> -->
-     <!-- Next tags are optional but recommended -->
-     <!-- <meta property="og:image:width" content="1200">
-     <meta property="og:image:height" content="630"> -->
+     <meta property="og:site_name" content="Weight Converter"> 
+     <!-- Next tags are optional but recommended  -->
+     <meta property="og:image:width" content="1200"> 
+     <meta property="og:image:height" content="630"> 
 
-     <!-- Twitter cards-->
-     <!-- <meta name="twitter:card" content="summary">
+     <!-- Twitter cards -->
+     <meta name="twitter:card" content="summary">
      <meta name="twitter:site" content="@Mr_Cmc1">
      <meta name="twitter:creator" content="Mr_Cmc1">
      <meta name="twitter:url" content="drawyourpixelart.netlify.com">
      <meta name="twitter:title" content="pixel art maker">
      <meta name="twitter:description" content="pixel art maker">
      <meta name="twitter:image" content="./images/icons/icon-72x72.png">
-     <link rel="manifest" href="./manifest.json"> -->
-
-     <!-- open Graph -->
-     <!-- <meta property="og:type" content="website">
-     <meta property="og:url" content="drawyourpixelart.netlify.com">
-     <meta property="og:title" contnent="pixel art maker">
-     <meta property="og:image" content="./images/icons/icon-72x72.png">
-     <meta property="og:description" content="Simple weight converter">
-     <meta property="og:site_name" content="Weight Converter"> -->
-     <!-- Next tags are optional but recommended -->
-     <!-- <meta property="og:image:width" content="1200"> -->
-     <!-- <meta property="og:image:height" content="630"> -->
-
-     <!-- Twitter cards-->
-     <!-- <meta name="twitter:card" content="summary">
-     <meta name="twitter:site" content="@Mr_Cmc1">
-     <meta name="twitter:creator" content="Mr_Cmc1">
-     <meta name="twitter:url" content="drawyourpixelart.netlify.com">
-     <meta name="twitter:title" content="pixel art maker">
-     <meta name="twitter:description" content="pixel art maker">
-     <meta name="twitter:image" content="./images/icons/icon-72x72.png">
-     <meta name="theme-color" content="#d32424" /> -->
+     <meta name="theme-color" content="#d32424" />
 </head>
 
 <body>
      <div class="container">
           <header>
-               <h1>Pixel
-                    <span> </span> Marker
-               </h1>
+            <h1>Pixel <span> </span> Marker</h1>
           </header>
           <section class="section-a">
-               <form>
-                    <div>
-                         <label for="height">Height</label>
-                         <input type="number" id="height">
-                    </div>
-                    <div>
-                         <label for="height">Weight</label>
-                         <input type="number" id="width">
-                    </div>
-               </form>
-               <div class="btn">
-                    <div class="create-board">
-                         <button class="create-table">Create Board</button>
-                         <input type="color" id="color">
-                    </div>
-                    <div class="board-settings">
-                         <button class="clear">Clear</button>
-                         <button class="delete">Delete</button>
-                         <button class="draw">Draw</button>
-                    </div>
-               </div>
+            <form>
+              <div>
+                <label for="height">Height</label>
+                <input type="number" id="height" />
+              </div>
+              <div>
+                <label for="height">Weight</label>
+                <input type="number" id="width" />
+              </div>
+            </form>
+            <div class="btn">
+              <div class="create-board">
+                <button class="create-table">Create Board</button>
+                <input type="color" id="color" />
+              </div>
+              <div class="board-settings">
+                <button class="clear">Clear</button>
+                <button class="delete">Delete</button>
+                <button class="draw">Draw</button>
+              </div>
+            </div>
           </section>
           <div class="zoom-btn">
-               <button class="zoom-out">plus</button>
-               <button class="zoom-in">minus</button>
+            <button class="zoom-out">+</button>
+            <button class="reset">reset</button>
+            <button class="zoom-in">-</button>
           </div>
           <section class="pixel-board">
-               <table class="table">
-               </table>
+            <table class="table"></table>
           </section>
+        </div>
      </div>
      <script src="./js/app.js"></script>
      </script>

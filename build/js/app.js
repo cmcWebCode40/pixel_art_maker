@@ -1,4 +1,3 @@
-// Global Variable....
 const table = document.querySelector(".table");
 
 // functions for all Events...
@@ -30,7 +29,38 @@ const clearFields = () => {
   document.querySelector("#width").value = "";
 };
 
-// Events for creating Table...
+const zoom = (() => {
+  let height = 10;
+  let width = 10;
+
+  function changeValue(h, w) {
+    height += h;
+    width += w;
+  }
+
+  return {
+    add: function() {
+      1;
+      changeValue(2, 2);
+    },
+    minus: function() {
+      changeValue(-2, -2);
+    },
+    reset: function() {
+      height = 10;
+      width = 10;
+    },
+    zoomOutIn: function() {
+      let table = document.querySelectorAll("td");
+      table.forEach(fig => {
+        fig.style.height = `${height}px`;
+        fig.style.width = `${width}px`;
+      });
+    }
+  };
+})();
+
+// *Events for creating Table...
 document.querySelector(".create-table").addEventListener("click", e => {
   e.preventDefault();
   const column = document.querySelector("#height").value;
@@ -51,7 +81,7 @@ document.querySelector(".delete").addEventListener("click", e => {
   deleteTable();
 });
 
-//Events to clear color ....
+//*Events to clear color ....
 document.querySelector(".clear").addEventListener("click", e => {
   e.preventDefault();
   let boxes = document.querySelectorAll(".box-cell");
@@ -60,19 +90,27 @@ document.querySelector(".clear").addEventListener("click", e => {
   });
 });
 
-//Events to Draw pixel ....
+//*Events to Draw pixel ....
 document.querySelector(".draw").addEventListener("click", e => {
   e.preventDefault();
   drawPixel();
 });
 
-//Zoom buttons
+const zoomIn = document.querySelector(".zoom-in");
+const zoomOut = document.querySelector(".zoom-out");
+const reset = document.querySelector(".reset");
 
-const zoomInOut = (function() {
-  const zoomIn = document.querySelector(".zoom-in");
-  const zoomOut = document.querySelector(".zoom-out");
+zoomOut.addEventListener("click", function() {
+  zoom.add();
+  zoom.zoomOutIn();
+});
 
-  zoomIn.addEventListener("click", () => {
-    let box = document.querySelectorAll(".box-cell");
-  });
-})();
+zoomIn.addEventListener("click", () => {
+  zoom.minus();
+  zoom.zoomOutIn();
+});
+
+reset.addEventListener("click", () => {
+  zoom.reset();
+  zoom.zoomOutIn();
+});
