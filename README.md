@@ -18,9 +18,9 @@ Enter the required fields...`height && width`
 
 ## Website
 
-- This web App is hosted on [netlify.com](drawyourpixelart.netlify.com)
+- This web App is hosted on [netlify.com](netlify.com)
 
-- This is my WebApp link [ makeyourpixeldraw](makeyourpixeldraw.surge.sh)
+- This is my WebApp link [ makeyourpixeldraw](pixelartdrawings.netlify.com)
 
 ## Contact
 
